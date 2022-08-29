@@ -161,13 +161,14 @@ h1 {
   list-style: none;
 }
 .liLevel{
-  text-align: left;
+  text-align:left;
 }
 .skillList{
   display: flex;
   flex-wrap:wrap;
   flex-direction: row;
   width: 60vw;
+  
 }
 .skills{
   display: flex;
@@ -175,7 +176,11 @@ h1 {
   text-align: left;
   width: 25vw;
   margin: 0.5rem;
-  
+}
+.education{
+  margin-right:1rem ;
+  text-align: start;
+
 }
 @media (max-width: 600px) {
   .grid {
