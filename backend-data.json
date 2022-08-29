@@ -1,0 +1,70 @@
+{
+    "aboutMe":[
+        {"text":"About Me"}
+    ],
+    "Education":[
+        {"schoolName":"Atasehir Anatolian High School","time":"2011-2016", "department" : "Math"},
+        {"schoolName":"Dogus University" ,"time" : "2016-2023", "department" : "Computer Engineering"}
+    ],
+    "Skills":[
+        {"skillName":"React.js","skillLevel":[
+            {"id":"1", "description":"How react and components works."},
+            {"id":"2", "description":"Passing data with props"},
+            {"id":"3", "description":"Building a navigation"},
+            {"id":"4", "description":"useEffect,useState hooks usage"},
+            {"id":"5", "description":"Fetching data"}
+        ]},
+        {"skillName":"Next.js","skillLevel":[
+            {"id":"1", "description":"How Next.js and its features work."},
+            {"id":"2", "description":"File based routing"},
+            {"id":"3", "description":"Server Side / Client Side / Static Rendering"},
+            {"id":"4", "description":"useSWR hook knowledge"},
+            {"id":"5", "description":"Fetching data"}
+        ]},
+        {"skillName":"React-Native","skillLevel":[
+            {"id":"1", "description":"How React Native and components works."},
+            {"id":"2", "description":"Passing data with props"},
+            {"id":"3", "description":"Building a navigation"},
+            {"id":"4", "description":"useEffect,useState hooks usage"},
+            {"id":"5", "description":"Fetching data"}
+        ]},
+        {"skillName":"Python","skillLevel":[
+            {"id":"1", "description":"What is Python and what can it be used for"},
+            {"id":"2", "description":"Understanding variables and operations"},
+            {"id":"3", "description":"Object Orianted Programming with Python"},
+            {"id":"4", "description":"Fetching Data from API and using It"},
+            {"id":"5", "description":"Basic data analayze and visualization functions."},
+            {"id":"6", "description":"Basic digital image proccessing functions."}
+        ]},
+        {"skillName":"CSS","skillLevel":[
+            {"id":"1", "description":"What is CSS and what can it be used for"},
+            {"id":"2", "description":"Mobile First Developing Method"},
+            {"id":"3", "description":"Border-Box"},
+            {"id":"4", "description":"Positioning and Understanding 'Flex'"},
+            {"id":"5", "description":"Using custom fonts via API"}
+        ]},
+        {"skillName":"Figma","skillLevel":[
+            {"id":"1", "description":"What is Figma and how to use it"},
+            {"id":"2", "description":"Understanding the design for development"},
+            {"id":"3", "description":"Coding the design"}
+        ]},
+        {"skillName":"Communication","skillLevel":[
+            {"id":"1", "description":"Knowledge of how important is Team Work and why communication is the key"},
+            {"id":"2", "description":"Former Head of Music Club of Dogus University for 2 years (was in border for 5 years)"},
+            {"id":"3", "description":"How to approach your teammates or chairmen"},
+            {"id":"4", "description":"How to make others understand you"},
+            {"id":"5", "description":"How to deal with unneccessary misunderstanding situations"}
+        ]}
+    
+    ],
+    "projectList":[
+        {"id":"p1","title":"UniSocial", "link": "/" , "img" : "/unisoc.jpg"},
+        {"id":"p2","title":"UniSocial", "link": "/" , "img" : "/unisoc.jpg"},
+        {"id":"p3","title":"UniSocial", "link": "/" , "img" : "/unisoc.jpg"},
+        {"id":"p3","title":"UniSocial", "link": "/" , "img" : "/unisoc.jpg"}
+        
+    ]
+}
+
+
+
