@@ -4,11 +4,11 @@ import path from 'path'
 function Resume({Education,Skills}) {
   return (
     <div className="resumePage">
-      <div>
+      <div >
       <h1>Education History</h1>
-      <ul>
+      <ul className="education">
         {Education.map((schools)=>(
-          <li key={schools.schoolName}>{schools.schoolName}  - {schools.department} - {schools.time}</li>
+          <li  key={schools.schoolName}>{schools.schoolName}  - {schools.department} - {schools.time}</li>
         ))}
       </ul>
       </div>
