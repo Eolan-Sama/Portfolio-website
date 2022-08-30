@@ -24,7 +24,7 @@
 }
 
 .page {
-  background: white;
+  background-color: #bac5d1;
   z-index: 1;
   min-height: 100vh;
   padding: 0;
@@ -35,7 +35,7 @@
   align-items: center;
 }
 .main-page {
-  background: white;
+  background-color: #bac5d1;
   z-index: 1;
   min-height: 100vh;
   padding: 4rem 0;
@@ -46,7 +46,7 @@
   align-items: center;
 }
 .contactPage {
-  background: white;
+  background-color: #bac5d1;
   z-index: 1;
   min-height: 100vh;
   padding: 4rem 0;
@@ -57,7 +57,7 @@
   align-items: center;
 }
 .resumePage{
-  background: white;
+  background-color: #bac5d1;
   z-index: 1;
   min-height: 100vh;
   padding: 3rem 0;

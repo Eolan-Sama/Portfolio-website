@@ -3,8 +3,10 @@ html{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
 }
 body {
+  
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -24,6 +26,12 @@ h1 {
   margin: 0.5rem;
   line-height: 1;
   font-size: 3.5rem;
+}
+h2{
+  margin: 0.5rem;
+  line-height: 1;
+  font-size: 2rem;
+  
 }
 
 .container {
@@ -154,11 +162,23 @@ h1 {
 .icons{
   margin:1rem;
 }
+.downloadButton{
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-color: rgb(167, 161, 161);
+  cursor:not-allowed;
+  
+}
+.summary{
+  max-width:50vw;
+}
 .liTitle{
   margin:0;
   padding:0;
   font-size: larger;
   list-style: none;
+  text-decoration:underline;
+  
 }
 .liLevel{
   text-align:left;
@@ -181,6 +201,13 @@ h1 {
   margin-right:1rem ;
   text-align: start;
 
+}
+.aboutMe{
+  max-width:50vw;
+}
+.textTopic{
+  font-size: large;
+  font-weight: bold;
 }
 @media (max-width: 600px) {
   .grid {
@@ -212,7 +239,12 @@ h1 {
     max-width: max-content;
 
   }
-  
+  .aboutMe{
+    max-width:80vw;
+  }
+  .summary{
+    max-width:80vw;
+  }
   
  
 }
@@ -225,6 +257,12 @@ h1 {
   .projectCard {
     max-width: max-content;
 
+  }
+  .aboutMe{
+    max-width:80vw;
+  }
+  .summary{
+    max-width:80vw;
   }
   
 }
@@ -247,17 +285,24 @@ h1 {
     width: max-content;
 
   }
-}
-
-
-@media (max-width:820px){
-  .skillList{
-    max-width: fit-content;
-    height: fit-content;
+  .aboutMe{
+    max-width:80vw;
   }
+  .summary{
+    max-width:80vw;
+  }
+  
 }
+
 @media (max-width:1400px){
   .skillList{
     justify-content: center;
   }
+  .aboutMe{
+    max-width:80vw;
+  }
+  .summary{
+    max-width:80vw;
+  }
+  
 }

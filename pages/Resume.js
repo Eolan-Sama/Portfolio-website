@@ -4,15 +4,13 @@ import path from 'path'
 function Resume({Education,Skills}) {
   return (
     <div className="resumePage">
-      <div >
-      <h1>Education History</h1>
-      <ul className="education">
-        {Education.map((schools)=>(
-          <li  key={schools.schoolName}>{schools.schoolName}  - {schools.department} - {schools.time}</li>
-        ))}
-      </ul>
+      <h1>My Resume</h1>
+      <button disabled className="downloadButton">Download My Resume</button>
+      <div className="summary">
+        <p><b>Summary:</b> 24 years old. Living in Turkey. Frontend, UI/UX developer. I prefer Next.js, React.js, MongoDB and Vercel to build websites.</p>
+
       </div>
-      <h1>Skills</h1>
+      <h2>Skills</h2>
       <div className="skillList">
         {Skills.map((skill)=>(
           <div className="skills" >
@@ -21,7 +19,14 @@ function Resume({Education,Skills}) {
           </div>
         ))}
       </div>
-      
+      <div >
+      <h2>Education History</h2>
+      <ul className="education">
+        {Education.map((schools)=>(
+          <li  key={schools.schoolName}>{schools.schoolName}  - {schools.department} - {schools.time}</li>
+        ))}
+      </ul>
+      </div>
       <Links/>
     </div>
   )
