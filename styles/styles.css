@@ -50,7 +50,12 @@ h2{
   align-items: center;
 }
 
-
+.contactUl{
+  max-width:80vw ;
+}
+.contactButtonTitle{
+  text-align: center;
+}
 .title a {
   color: #0070f3;
   text-decoration: none;
