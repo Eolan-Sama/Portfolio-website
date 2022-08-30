@@ -1,11 +1,16 @@
 import Links from "../components/Links"
 import Image from "next/image"
 import profilePic from '../public/me.jpg'
-
+import Head from "next/head"
 function AboutMe() {
   
   return (
     <div className="page">
+      <Head>
+        <title>About Me</title>
+        <meta name="description" content="Everything About Ahmet Emre Karaca" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <h1>Who Am I ?</h1>
       <Image src={profilePic} alt='Picture of Ahmet'/>
       <div className="aboutMe">

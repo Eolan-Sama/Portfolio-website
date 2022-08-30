@@ -1,9 +1,16 @@
 import Links from "../components/Links"
 import fs from 'fs/promises'
 import path from 'path'
+import Head from "next/head"
 function Resume({Education,Skills}) {
   return (
+    
     <div className="resumePage">
+      <Head>
+        <title>My Resume</title>
+        <meta name="description" content="Ahmet Emre Karaca's Resume" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <h1>My Resume</h1>
       <button disabled className="downloadButton">Download My Resume</button>
       <div className="summary">

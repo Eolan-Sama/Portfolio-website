@@ -1,11 +1,16 @@
 import Links from "../../components/Links"
 import fs from 'fs/promises'
 import path from 'path'
-import Link from "next/link"
+import Head from "next/head"
 import Image from "next/image"
 function Projects({projectList}) {
   return (
     <div className="page">
+      <Head>
+        <title>My Projects</title>
+        <meta name="description" content="Ahmet Emre Karaca's Projects" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
     <h1>Projects</h1>
       <div className="projectList">
         {projectList.map((projects)=>(

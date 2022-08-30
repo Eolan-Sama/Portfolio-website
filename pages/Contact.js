@@ -1,11 +1,16 @@
 import Image from "next/image"
 import Link from "next/link"
 import Links from "../components/Links"
-
+import Head from "next/head"
 
 function Contact() {
   return (
     <div className="contactPage">
+      <Head>
+        <title>Contact Me</title>
+        <meta name="description" content="Contact Me via Buttons" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <h2>If you think that...</h2>
       <ul>
         <li>We can work together</li>
