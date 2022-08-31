@@ -211,15 +211,16 @@ h2{
   display: flex;
   flex-wrap:wrap;
   flex-direction: row;
-  width: 60vw;
-  
+  width:80vw;
+  justify-content: center;
+  margin:2rem 0 2rem 0;
 }
 .skills{
   display: flex;
   flex-direction: column;
   text-align: left;
   width: 25vw;
-  margin: 0.5rem;
+  
 }
 .education{
   margin-right:1rem ;
