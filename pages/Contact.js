@@ -9,7 +9,7 @@ function Contact() {
       <Head>
         <title>Contact Me</title>
         <meta name="description" content="Contact Me via Buttons" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </Head>
       <div className="contactButtonTitle">
       <h2>If you think that...</h2>

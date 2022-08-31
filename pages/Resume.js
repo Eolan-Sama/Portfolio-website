@@ -9,7 +9,7 @@ function Resume({Education,Skills}) {
       <Head>
         <title>My Resume</title>
         <meta name="description" content="Ahmet Emre Karaca's Resume" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </Head>
       <h1 className="title">My Resume</h1>
       <button disabled className="downloadButton">Download My Resume</button>

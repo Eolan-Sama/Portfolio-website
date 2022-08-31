@@ -9,7 +9,7 @@ function Projects({projectList}) {
       <Head>
         <title>My Projects</title>
         <meta name="description" content="Ahmet Emre Karaca's Projects" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </Head>
     <h1 className="title">Projects</h1>
       <div className="projectList">

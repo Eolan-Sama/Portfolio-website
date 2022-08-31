@@ -9,7 +9,7 @@ function AboutMe() {
       <Head>
         <title>About Me</title>
         <meta name="description" content="Everything About Ahmet Emre Karaca" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </Head>
       <h1 className="title">Who Am I ?</h1>
       <Image src={profilePic} alt='Picture of Ahmet'/>

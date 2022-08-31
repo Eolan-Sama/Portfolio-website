@@ -8,7 +8,7 @@ const Home = () => {
       <Head>
         <title>Ahmet Emre Karaca</title>
         <meta name="description" content="Ahmet Emre Karaca Portfolio Website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </Head>
       <div className="welcome">
       <h1>WELCOME</h1>
