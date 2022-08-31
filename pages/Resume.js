@@ -17,7 +17,7 @@ function Resume({Education,Skills,locale,Titles}) {
       {Titles.filter(p=>p.locale === locale).map((title,i)=>(
           <h1 key={i} className="title">{title.resumeTitle}</h1>
         ))}
-      <button disabled className="downloadButton">Download My Resume</button>
+      {/*<button disabled className="downloadButton">Download My Resume</button>*/}
       <div className="summary">
       {Titles.filter(p=>p.locale === locale).map((title,i)=>(
           <p key={i}><b>{title.Summary}</b>&nbsp;{title.resumeSummary}</p>
