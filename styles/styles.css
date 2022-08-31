@@ -47,33 +47,35 @@ h2{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  
+  
 }
 
+.main-page h1{
+  margin-bottom:6rem;
+  padding:1rem;
+  line-height: 1;
+  font-size:10vw;
+}
+.main-page p{
+  font-size: large;
+  color:#E7E9EA
+}
+.welcome{
+  text-align: center;
+  max-width: 80vw;
+ 
+}
 .contactUl{
   max-width:80vw ;
 }
 .contactButtonTitle{
   text-align: center;
 }
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.title{
+  color:#1D9BF0;
+  margin:2rem;
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
 .description {
   text-align: center;
 }
@@ -95,23 +97,37 @@ h2{
 
 .grid {
   display: flex;
-  flex-direction: row;
+  margin-top: 4rem;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   max-width: 100vw;
 }
+.links-part1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.links-part2{
+  display: flex;
+  flex-direction: row;
+  
+  
+}
 
 .card {
   margin: 1rem;
   padding: 1rem;
-  text-align: left;
+  text-align: center;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #E7E9EA;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  width: 140px;
+  min-width: 11.1vw;
 }
 .projectCard {
   display: flex;
@@ -121,7 +137,7 @@ h2{
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #E7E9EA;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 25vw;
@@ -139,8 +155,8 @@ h2{
 .card:hover,
 .card:focus,
 .card:active {
-  color: #677686;
-  border-color: #677686;
+  color: #E7E9EA;
+  border-color: #E7E9EA;
 }
 
 .card h2 {
@@ -168,7 +184,7 @@ h2{
   margin:1rem;
 }
 .downloadButton{
-  background-color: #ffffff;
+  background-color: #E7E9EA;
   border-radius: 10px;
   border-color: rgb(167, 161, 161);
   cursor:not-allowed;
@@ -296,7 +312,7 @@ h2{
   .summary{
     max-width:80vw;
   }
-  
+ 
 }
 
 @media (max-width:1400px){

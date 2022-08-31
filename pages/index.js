@@ -10,8 +10,12 @@ const Home = () => {
         <meta name="description" content="Ahmet Emre Karaca Portfolio Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      Welcome Page
-      <Links/>
+      <div className="welcome">
+      <h1>WELCOME</h1>
+      <p>24, Turkey, Frontend Developer</p>
+      <p>Wanna learn more about me? Start clicking buttons !</p>
+      </div>
+      <Links page={'main'}/>
       
     </div>
   )

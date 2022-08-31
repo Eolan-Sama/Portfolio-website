@@ -11,7 +11,7 @@ function Resume({Education,Skills}) {
         <meta name="description" content="Ahmet Emre Karaca's Resume" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>My Resume</h1>
+      <h1 className="title">My Resume</h1>
       <button disabled className="downloadButton">Download My Resume</button>
       <div className="summary">
         <p><b>Summary:</b> 24 years old. Living in Turkey. Frontend, UI/UX developer. I prefer Next.js, React.js, MongoDB and Vercel to build websites.</p>
@@ -34,7 +34,7 @@ function Resume({Education,Skills}) {
         ))}
       </ul>
       </div>
-      <Links/>
+      <Links page={'resume'}/>
     </div>
   )
 }
@@ -45,6 +45,7 @@ export async function getStaticProps(){
   const filePath = path.join(process.cwd(), 'backend-data.json')
   const jsonData = await fs.readFile(filePath)
   const data = JSON.parse(jsonData)
-  return {props:{Education: data.Education , Skills: data.Skills }}
+  return {props:{Education: data.Education , Skills: data.Skills } 
+        }
 }
 

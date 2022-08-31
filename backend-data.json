@@ -58,10 +58,7 @@
     
     ],
     "projectList":[
-        {"id":"p1","title":"UniSocial", "link": "/" , "img" : "/unisoc.jpg"},
-        {"id":"p2","title":"UniSocial", "link": "/" , "img" : "/unisoc.jpg"},
-        {"id":"p3","title":"UniSocial", "link": "/" , "img" : "/unisoc.jpg"},
-        {"id":"p3","title":"UniSocial", "link": "/" , "img" : "/unisoc.jpg"}
+        {"id":"p1","title":"UniSocial", "link": "/" , "img" : "/unisoc.jpg"}
         
     ]
 }

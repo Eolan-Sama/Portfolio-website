@@ -29,7 +29,7 @@ function Contact() {
           <a className='icons' href='https://twitter.com/deathswit'><Image src='/TwitterLogo.png' width='30' height='30' alt="Twitter"/></a>
           <a className='icons' href="mailto:ahmetemre_k@hotmail.com"><Image src='/MailLogo.png' width='30' height='30' alt="Mail"/></a>
         </div>
-      <Links/>
+      <Links page={'contact'}/>
     </div>
     
   )

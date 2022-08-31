@@ -24,7 +24,8 @@
 }
 
 .page {
-  background-color: #bac5d1;
+  background-color: black;
+  color:#E7E9EA;
   z-index: 1;
   min-height: 100vh;
   padding: 0;
@@ -35,8 +36,12 @@
   align-items: center;
 }
 .main-page {
-  background-color: #bac5d1;
+  background: url("/workspace.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 1;
+  color:#E7E9EA;
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -46,8 +51,9 @@
   align-items: center;
 }
 .contactPage {
-  background-color: #bac5d1;
+  background-color: #000000;
   z-index: 1;
+  color:#E7E9EA;
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -59,7 +65,8 @@
 }
 
 .resumePage{
-  background-color: #bac5d1;
+  background-color: #000000;
+  color:#E7E9EA;
   z-index: 1;
   min-height: 100vh;
   padding: 3rem 0;

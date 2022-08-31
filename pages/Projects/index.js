@@ -11,7 +11,7 @@ function Projects({projectList}) {
         <meta name="description" content="Ahmet Emre Karaca's Projects" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <h1>Projects</h1>
+    <h1 className="title">Projects</h1>
       <div className="projectList">
         {projectList.map((projects)=>(
           <div  key={projects.id}>
@@ -24,7 +24,7 @@ function Projects({projectList}) {
             </div>
         ))}
       </div>
-      <Links/>
+      <Links page={'project'}/>
     </div>
   )
 }

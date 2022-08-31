@@ -11,7 +11,7 @@ function AboutMe() {
         <meta name="description" content="Everything About Ahmet Emre Karaca" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Who Am I ?</h1>
+      <h1 className="title">Who Am I ?</h1>
       <Image src={profilePic} alt='Picture of Ahmet'/>
       <div className="aboutMe">
         <p className="textTopic"><i>Metal music, coding, gaming enjoyer...</i></p>
@@ -34,7 +34,7 @@ function AboutMe() {
         
       
       </div>
-      <Links/>
+      <Links page={'aboutMe'}/>
     </div>
   )
 }
