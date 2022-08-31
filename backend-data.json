@@ -125,8 +125,11 @@
         {"locale":"en-US","id":"resSum","Summary":"Summary: "},
         {"locale":"tr-TR","id":"resSumTR","Summary":"Özet: "},
         {"locale":"en-US","id":"resumeSummary","resumeSummary":"24 years old. Living in Turkey. Frontend, UI/UX developer. I prefer Next.js, React.js, MongoDB and Vercel to build websites."},
-        {"locale":"tr-TR","id":"resumeSummaryTR","resumeSummary":"24 yaşında, İstanbul'da yaşıyor. Ön uç - UI/UX geliştiricisi. Tercih ettiği teknolojiler : Next.js, React.js, MongoDB ve Vercel"}
-        
+        {"locale":"tr-TR","id":"resumeSummaryTR","resumeSummary":"24 yaşında, İstanbul'da yaşıyor. Ön uç - UI/UX geliştiricisi. Tercih ettiği teknolojiler : Next.js, React.js, MongoDB ve Vercel"},
+        {"locale":"en-US","id":"mySkills","Skills":"Skills"},
+        {"locale":"tr-TR","id":"mySkillsTR","Skills":"Yeteneklerim"},
+        {"locale":"en-US","id":"eduTitle","EducationTitle":"Education History"},
+        {"locale":"tr-TR","id":"eduTitleTR","EducationTitle":"Eğitim Hayatım"}
     ],
     "contact":[
         {"locale":"en-US","id":"1","description":"We can work together"},

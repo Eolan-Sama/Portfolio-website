@@ -3,7 +3,7 @@ import Links from "./../components/Links"
 import fs from 'fs/promises'
 import path from 'path'
 const Home = ({locale,welcome}) => {
-  console.log(locale)
+  
   return (
     <div className="main-page">
       <Head>

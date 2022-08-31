@@ -23,7 +23,9 @@ function Resume({Education,Skills,locale,Titles}) {
           <p key={i}><b>{title.Summary}</b>&nbsp;{title.resumeSummary}</p>
         ))}
       </div>
-      <h2>Skills</h2>
+      {Titles.filter(p=>p.locale === locale).map((title,i)=>(
+          <h2 key={i}>{title.Skills}</h2>
+        ))}
       <div className="skillList">
         {Skills.map((skill,i)=>(
           <div className="skills" >
@@ -33,10 +35,12 @@ function Resume({Education,Skills,locale,Titles}) {
         ))}
       </div>
       <div >
-      <h2>Education History</h2>
+      {Titles.filter(p=>p.locale === locale).map((title,i)=>(
+          <h2 key={i}>{title.EducationTitle}</h2>
+        ))}
       <ul className="education">
         {Education.filter(p=>p.locale === locale).map((schools, i)=>( 
-          <li  key={i}>{schools.schoolName}  - {schools.department} - {schools.time}</li>
+          <li key={i}>{schools.schoolName}  - {schools.department} - {schools.time}</li>
         ))}
       </ul>
       </div>
