@@ -1,10 +1,19 @@
 {
     "aboutMe":[
-        {"text":"About Me"}
+        {"locale":"en-US","textId":"1","text1":"Born in 1998 in Üsküdar, İstanbul in a snowy day. I have been doing one thing or another about computer since I was 3. I always wanted to have a career related to computers and here I am. I was 11 when I had encountered programming, thanks to my computer teacher. Though it didn't really go well with Java :D"},
+        {"locale":"en-US","textId":"2","text2":"But I didn't give up. To reach my dreams, I started to learn HTML, CSS and JavaScript when I was in high school. It was really difficult for me to study programming languages while studying for school. So, it was really slow progression for me but was a progression at least. In my university years, I had to learn basic C++, Java and Python to pass the classes and I had to leave web programming for a while. Sadly, web programming courses was not offered, hence I had to teach that to myself. I bought lots of online courses. Started from the beginning even though I already knew basics of HTML and CSS. And finally, started to learn React, React-Native and MongoDB."},
+        {"locale":"en-US","textId":"3","text3":"JavaScript frameworks was something I never heard about when I first met them. It wasn't hard to learn the fundamentals but it was hard adapting to write almost everything in JS including back-end. it took me a year to learn making a website without getting any help which is this portfolio website you're on."},
+        {"locale":"en-US","textId":"4","text4":"Well I love metal music, both playing and listening. I can play the drums and bass guitar. I used to play in a couple of bands and loved being on a stage. We even made our own album with one of the bands I was in but couldn't release it yet sadly. I love playing video games, especially teamwork games such as League of Legends, Valorant, Final Fantasy XIV, The Elder Scrolls Online, etc. I spend most of my free time with gaming with my friends."},
+        {"locale":"en-US","textId":"5","text5":"This is definetely not true. Given that I am a undergraduate student since 2016, I am one of the council members of Music Club of the university I was enrolled in. I was head of the council for 2 years. So, being involved with and leading a community was what defined me. What I was doing? Talking with managers of bars and cafes to organize an event at those places, communicating with the university to get permission for each event, preparing event reports to submit the university our information, engaging in conversations with everyone I could to break the ices. So, lots of communication with lots of people."},
+        {"locale":"en-US","textId":"6","title1":"Metal music, coding, gaming enjoyer..."},
+        {"locale":"en-US","textId":"7","title2":"On the other hand, what this guy do on his free times?"},
+        {"locale":"en-US","textId":"8","title3":"So you are not a social person since you play that much games ?"}
     ],
     "Education":[
-        {"schoolName":"Atasehir Anatolian High School","time":"2011-2016", "department" : "Math"},
-        {"schoolName":"Dogus University" ,"time" : "2016-2023", "department" : "Computer Engineering"}
+        {"locale":"en-US", "schoolName":"Atasehir Anatolian High School","time":"2011-2016", "department" : "Math"},
+        {"locale":"tr-TR","schoolName":"Ataşehir Anadolu Lisesi","time":"2011-2016", "department" : "Matematik"},
+        {"locale":"en-US","schoolName":"Dogus University" ,"time" : "2016-2023", "department" : "Computer Engineering"},
+        {"locale":"tr-TR","schoolName":"Doğuş Üniversitesi" ,"time" : "2016-2023", "department" : "Bilgisayar Mühendisliği"}
     ],
     "Skills":[
         {"skillName":"React.js","skillLevel":[
@@ -49,18 +58,52 @@
             {"id":"3", "description":"Coding the design"}
         ]},
         {"skillName":"Communication","skillLevel":[
-            {"id":"1", "description":"Knowledge of how important is Team Work and why communication is the key"},
-            {"id":"2", "description":"Former Head of Music Club of Dogus University for 2 years (was in border for 5 years)"},
-            {"id":"3", "description":"How to approach your teammates or chairmen"},
-            {"id":"4", "description":"How to make others understand you"},
-            {"id":"5", "description":"How to deal with unneccessary misunderstanding situations"}
+            {"id":"1", "description":"Understanding of how important teamwork is and why communication is the key"},
+            {"id":"2", "description":"Former Head of Music Club of Dogus University for 2 years (was in management board for 5 years)"},
+            {"id":"3", "description":"How to approach your teammates or head"},
+            {"id":"4", "description":"How to communicate efficiently"},
+            {"id":"5", "description":"How to prevent miscommunications"}
         ]}
     
     ],
     "projectList":[
         {"id":"p1","title":"UniSocial", "link": "/" , "img" : "/unisoc.jpg"}
         
+    ],
+    "titles":[
+        {"locale":"en-US","id":"AboutMe","aboutMeTitle":"Who Am I?"},
+        {"locale":"tr-TR","id":"AboutMeTR","aboutMeTitle":"Ben Kimim?"},
+        {"locale":"en-US","id":"Projects","projectsTitle":"My Projects"},
+        {"locale":"tr-TR","id":"ProjectsTR","projectsTitle":"Projelerim"},
+        {"locale":"en-US","id":"Resume","resumeTitle":"My Resume"},
+        {"locale":"tr-TR","id":"ResumeTR","resumeTitle":"Güncel CV'im"},
+        {"locale":"en-US","id":"Contact","contactMeTitle":"If you think that..."},
+        {"locale":"tr-TR","id":"ContactTR","contactMeTitle":"Eğer..."}
+    ],
+    "contact":[
+        {"locale":"en-US","id":"1","description":"We can work together"},
+        {"locale":"tr-TR","id":"2","description":"Beraber çalışabileceğimizi düşünüyorsan"},
+        {"locale":"en-US","id":"3","description":"I can make a website for you"},
+        {"locale":"tr-TR","id":"4","description":"Sana hayalindeki websitesini yapabileceğimi düşünüyorsan"},
+        {"locale":"en-US","id":"5","description":"You want to tell me something"},
+        {"locale":"tr-TR","id":"6","description":"Bana bir şey sormak yada söylemek istiyorsan"},
+        {"locale":"en-US","id":"7","description":"You want to give me feedback about my website"},
+        {"locale":"tr-TR","id":"8","description":"Websitem hakkında yorum yapmak istiyorsan"}
+    ],
+    "contactbuttontext":[
+        {"locale":"en-US","id":"1","description":"You Can Contact Me From Any of These Buttons"},
+        {"locale":"tr-TR","id":"2","description":"Aşağıda Bulunan Butonlardan Bana Ulaşabilirsin"}
+    ],
+    "welcome":[
+        {"locale":"en-US","id":"1","welcomeText1":"WELCOME"},
+        {"locale":"tr-TR","id":"2","welcomeText1":"HOŞGELDİNİZ"},
+        {"locale":"en-US","id":"3","welcomeText2":"24, Turkey, Frontend Developer"},
+        {"locale":"tr-TR","id":"4","welcomeText2":"24, Türkiye, Ön Uç Geliştirici"},
+        {"locale":"en-US","id":"5","welcomeText3":"Wanna learn more about me? Go ahead and discover!"},
+        {"locale":"tr-TR","id":"6","welcomeText3":"Hakkımda daha fazla öğrenmek ister misin? Tuşları dene!"}
+        
     ]
+
 }
 
 

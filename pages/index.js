@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
-
 import Links from "./../components/Links"
-const Home = () => {
+import fs from 'fs/promises'
+import path from 'path'
+const Home = ({locale,welcome}) => {
+  console.log(locale)
   return (
     <div className="main-page">
       <Head>
@@ -11,13 +12,33 @@ const Home = () => {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <div className="welcome">
-      <h1>WELCOME</h1>
-      <p>24, Turkey, Frontend Developer</p>
-      <p>Wanna learn more about me? Start clicking buttons !</p>
+      {welcome.filter(p=>p.locale === locale).map((welcome,i)=>(
+          <h1 className="welcomeTitle" key={i}>{welcome.welcomeText1}</h1>
+        ))}
+        <div className="main-midtext">
+      {welcome.filter(p=>p.locale === locale).map((welcome,i)=>(
+          <p key={i}>{welcome.welcomeText2}</p>
+        ))}
+      {welcome.filter(p=>p.locale === locale).map((welcome,i)=>(
+          <p key={i}>{welcome.welcomeText3}</p>
+        ))}
+        </div>
       </div>
-      <Links page={'main'}/>
+      <Links page={'main'} locale={locale}/>
       
     </div>
   )
 }
 export default Home
+export async function getStaticProps({locale}){
+  
+  const filePath = path.join(process.cwd(), 'backend-data.json')
+  const jsonData = await fs.readFile(filePath)
+  const data = JSON.parse(jsonData)
+  return {
+          props:
+      { locale, welcome:data.welcome } 
+          
+          
+        }
+}

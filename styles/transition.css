@@ -28,7 +28,6 @@
   color:#E7E9EA;
   z-index: 1;
   min-height: 100vh;
-  padding: 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -77,6 +76,17 @@
   align-items: center;
   text-align:center;
   width: 100%;
+}
+.projectPage{
+    background-color: black;
+    color:#E7E9EA;
+    z-index: 1;
+    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 @media (max-width: 600px) {
   .page{

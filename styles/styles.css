@@ -52,10 +52,10 @@ h2{
 }
 
 .main-page h1{
-  margin-bottom:6rem;
-  padding:1rem;
+  margin: 2rem 0 6rem 0 ;
+
   line-height: 1;
-  font-size:10vw;
+  font-size:9vw;
 }
 .main-page p{
   font-size: large;
@@ -64,7 +64,9 @@ h2{
 .welcome{
   text-align: center;
   max-width: 80vw;
- 
+}
+.main-midtext{
+  margin-bottom:2rem;
 }
 .contactUl{
   max-width:80vw ;
@@ -74,7 +76,7 @@ h2{
 }
 .title{
   color:#1D9BF0;
-  margin:2rem;
+  margin-top:2rem;
 }
 .description {
   text-align: center;
@@ -149,6 +151,7 @@ h2{
   flex-wrap:wrap;
   flex-direction: row;
   max-width: 40vw;
+  margin:4rem;
   
   
 }
@@ -226,9 +229,22 @@ h2{
 .aboutMe{
   max-width:50vw;
 }
+.aboutMeText{
+  text-indent: 1vw;
+}
 .textTopic{
   font-size: large;
   font-weight: bold;
+}
+.lang-buttons{
+  display:flex;
+  flex-direction: row;
+  width: 80vw;
+  justify-content: center;
+  align-items: center;
+}
+.langButton{
+  margin:0.2rem;
 }
 @media (max-width: 600px) {
   .grid {

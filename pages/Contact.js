@@ -1,9 +1,9 @@
 import Image from "next/image"
-import Link from "next/link"
 import Links from "../components/Links"
 import Head from "next/head"
-
-function Contact() {
+import fs from 'fs/promises'
+import path from 'path'
+function Contact({contact,contactBtnTxt,locale,Titles}) {
   return (
     <div className="contactPage">
       <Head>
@@ -12,16 +12,19 @@ function Contact() {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <div className="contactButtonTitle">
-      <h2>If you think that...</h2>
+      {Titles.filter(p=>p.locale === locale).map((title,i)=>(
+          <h1 key={i} className="title">{title.contactMeTitle}</h1>
+        ))}
       </div>
       <ul className="contactUl">
-        <li>We can work together</li>
-        <li>I can make a website for you</li>
-        <li>You want to tell me something</li>
-        <li>You want to give me feedback about my website</li>
+        {contact.filter(p=>p.locale === locale).map((contactText, i)=>( 
+          <li key={i}>{contactText.description}</li>
+        ))}
       </ul>
       <div className="contactButtonTitle">
-      <h3>You Can Contact Me From Any of These Buttons Anytime</h3>
+      {contactBtnTxt.filter(p=>p.locale === locale).map((BtnTxt,i)=>(
+          <h3 key={i} >{BtnTxt.description}</h3>
+        ))}
       </div>
         <div className="iconLinks">
           <a className='icons' href='https://www.instagram.com/deathswit/'><Image src='/InstaLogo.png' width='30' height='30' alt="Instagram"/></a>
@@ -29,10 +32,23 @@ function Contact() {
           <a className='icons' href='https://twitter.com/deathswit'><Image src='/TwitterLogo.png' width='30' height='30' alt="Twitter"/></a>
           <a className='icons' href="mailto:ahmetemre_k@hotmail.com"><Image src='/MailLogo.png' width='30' height='30' alt="Mail"/></a>
         </div>
-      <Links page={'contact'}/>
+      <Links page={'contact'} locale={locale}/>
     </div>
     
   )
 }
 
 export default Contact
+
+export async function getStaticProps({locale}){
+  
+  const filePath = path.join(process.cwd(), 'backend-data.json')
+  const jsonData = await fs.readFile(filePath)
+  const data = JSON.parse(jsonData)
+  return {
+          props:
+      {contact: data.contact, contactBtnTxt: data.contactbuttontext,locale,
+        Titles:data.titles} 
+          
+          
+        }}

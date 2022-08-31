@@ -3,15 +3,16 @@ import fs from 'fs/promises'
 import path from 'path'
 import Head from "next/head"
 import Image from "next/image"
-function Projects({projectList}) {
+function Projects({projectList,locale,Titles}) {
   return (
-    <div className="page">
+    <div className="projectPage">
       <Head>
         <title>My Projects</title>
         <meta name="description" content="Ahmet Emre Karaca's Projects" />
         <link rel="icon" href="/logo.svg" />
       </Head>
-    <h1 className="title">Projects</h1>
+      {Titles.filter(p=>p.locale === locale).map((title, i)=>( 
+          <h1 className='title'key={i}>{title.projectsTitle}</h1>))}
       <div className="projectList">
         {projectList.map((projects)=>(
           <div  key={projects.id}>
@@ -24,16 +25,16 @@ function Projects({projectList}) {
             </div>
         ))}
       </div>
-      <Links page={'project'}/>
+      <Links page={'project'} locale={locale}/>
     </div>
   )
 }
 
 export default Projects
 
-export async function getStaticProps(){
+export async function getStaticProps({locale}){
   const filePath = path.join(process.cwd(),'backend-data.json')
   const jsonData = await fs.readFile(filePath)
   const data = JSON.parse(jsonData)
-  return {props:{projectList: data.projectList}}
+  return {props:{projectList: data.projectList,locale,Titles:data.titles}}
 }

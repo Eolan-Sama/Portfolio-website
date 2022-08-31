@@ -2,7 +2,9 @@ import Links from "../components/Links"
 import fs from 'fs/promises'
 import path from 'path'
 import Head from "next/head"
-function Resume({Education,Skills}) {
+
+function Resume({Education,Skills,locale}) {
+  
   return (
     
     <div className="resumePage">
@@ -11,6 +13,7 @@ function Resume({Education,Skills}) {
         <meta name="description" content="Ahmet Emre Karaca's Resume" />
         <link rel="icon" href="/logo.svg" />
       </Head>
+      
       <h1 className="title">My Resume</h1>
       <button disabled className="downloadButton">Download My Resume</button>
       <div className="summary">
@@ -29,23 +32,27 @@ function Resume({Education,Skills}) {
       <div >
       <h2>Education History</h2>
       <ul className="education">
-        {Education.map((schools)=>(
-          <li  key={schools.schoolName}>{schools.schoolName}  - {schools.department} - {schools.time}</li>
+        {Education.filter(p=>p.locale === locale).map((schools, i)=>( 
+          <li  key={i}>{schools.schoolName}  - {schools.department} - {schools.time}</li>
         ))}
       </ul>
       </div>
-      <Links page={'resume'}/>
+      <Links page={'resume'} locale={locale}/>
     </div>
   )
 }
 
 export default Resume
 
-export async function getStaticProps(){
+export async function getStaticProps({locale}){
+  
   const filePath = path.join(process.cwd(), 'backend-data.json')
   const jsonData = await fs.readFile(filePath)
   const data = JSON.parse(jsonData)
-  return {props:{Education: data.Education , Skills: data.Skills } 
+  return {
+          props:
+      {Education: data.Education, Skills: data.Skills,locale } 
+          
+          
         }
 }
-
