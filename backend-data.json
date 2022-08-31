@@ -7,8 +7,17 @@
         {"locale":"en-US","textId":"5","text5":"This is definetely not true. Given that I am a undergraduate student since 2016, I am one of the council members of Music Club of the university I was enrolled in. I was head of the council for 2 years. So, being involved with and leading a community was what defined me. What I was doing? Talking with managers of bars and cafes to organize an event at those places, communicating with the university to get permission for each event, preparing event reports to submit the university our information, engaging in conversations with everyone I could to break the ices. So, lots of communication with lots of people."},
         {"locale":"en-US","textId":"6","title1":"Metal music, coding, gaming enjoyer..."},
         {"locale":"en-US","textId":"7","title2":"On the other hand, what this guy do on his free times?"},
-        {"locale":"en-US","textId":"8","title3":"So you are not a social person since you play that much games ?"}
+        {"locale":"en-US","textId":"8","title3":"So you are not a social person since you play that much games ?"},
+        {"locale":"tr-TR","textId":"9","title1":"Metal müzik, kodlama, oyun delisi..."},
+        {"locale":"tr-TR","textId":"10","title2":"Peki boş zamanlarında neler yapıyorsun?"},
+        {"locale":"tr-TR","textId":"11","title3":"Çok oyun oynadığına göre sosyal biri değilsin heralde?"},
+        {"locale":"tr-TR","textId":"12","text1":"9 Aralık 1998'de Üsküdar'da doğdum. 3 yaşımdan beri bilgisayar başında sayılırım. Bu yüzden oldum olası bilgisayar ile ilgili bir mesleğim olsun istemişimdir. İlk programlama dilim olan Java'yla 11 yaşımda okulumdaki bilgisayar öğretmeni sayensinde tanıştım. Pek iyi gittiği söylenemese de geleceğim hakkında bir takım resimler çizilmeye başlamıştı aklımda."},
+        {"locale":"tr-TR","textId":"13","text2":"Tabi ki pes etmedim. Hayallerimin peşinden koşarken bir sonraki durağım lise dönenmlerimde başladığım HTML, CSS ve JavaScript oldu. Aynı anda okul ödevlerimi, sınavlarımı ve projelerimi yetiştirmeye çalışırken programlama çalışmak benim için zor olsa da yılmadan öğrenmeyi sürdürdüm. Üniversiteye başladığım ilk senelerde  C++, Java ve Python'un temellerini öğrendim. Dersleri geçmek için öğrenmeye başladığım bu diller için web programlamayı bir kenara kaldırmak zorunda kaldım. Bu durum beni rahatsız etmedi çünkü üniversitenin ilk senelerinde algoritmik programlama hakkında bir çok şey öğrendim. Üniversitedeki 3. senemde, üniversitemde web programlamaya yönelik bir ders verilmediğini öğrenmek beni çok üzmüştü. Bu benim için tabi ki bir son değildi. İnternette bulunan kurslardan kendi kendime web programlama öğrenimime devam ettim."},
+        {"locale":"tr-TR","textId":"14","text3":"Geçtiğimiz sene ilk JavaScript Framework'üm olan React'le tanıştım. Benim için yepyeni bir sayfaydı. Temelleri çok zor olmasada kendi başıma temiz kodlar yazmayı öğrenmek uzun zamanımı aldı. Her şeyi JavaScript'le yazabiliyor olmak büyük bir rahatlık sağlasa da her şeyi yazabilmek için ciddi JavaScript bilgisi gerekiyordu tabiki. Neredeyse 1 sene sonra, şu anda bulunduğunuz portföy sitem Next.js kullanılarak tamamen benim tarafımdan yazılmış ilk websitesi."},
+        {"locale":"tr-TR","textId":"15","text4":"Metal müziği hem dinlemeyi hem çalmaya bayılırım. Bateri ve bas gitar çalmayı üniversitede öğrendim. Bir çok müzik grubum oldu, bir çok kez sahnelerde yer aldım. Gruplarımdan biriyle albüm yazmayı bile başardık ancak henüz yayınlamak nasip olmadı. Oyun oynamayı da çok severim. Daha çok çevrimiçi oyunları tercih ediyorum. League of Legends, Valorant, Final Fantasy XIV, World of Warcraft, Age of Empires gibi. Boş zamanımın bir çoğunu arkadaşlarımla bilgisayar başında veya masa başında oyun oynarak geçiriyorum."},
+        {"locale":"tr-TR","textId":"16","text5":"Bu kesinlikle doğru değil. 2016'da üniversiteye adımımı attığım seneden beri üniversitenin müzik kulübünün bir parçasıyım. 5 senedir yönetim kurulundayım. Son 2 senemi müzik kulübünün başkanlığını yaparak geçirdim. Peki, neler yapıyordum? Etkinlik yapılabilecek mekanların sahipleri ve organizasyon sorumlularıyla konuşmak, üniversite ile etkinlik izinleri ve kulüp üyelerinin isteklerini konuşmak, başka üniversitelerin öğrenci kulüpleri ile iletişime geçerek daha büyük etkinlikler planlamak ve bunun gibi bir çok durumda görev aldım. Aynı zamanda yönetim kurulunda görevli olduğum kulübün tüm üyelerinin mutlu olmasını sağlamak için herkesle konuşan, insanların sosyal ortamlara karşı kurduğu buzdan duvarları eritmek için çabalayan biriydim. Yani bool bol sosyallik. "}
     ],
+    
     "Education":[
         {"locale":"en-US", "schoolName":"Atasehir Anatolian High School","time":"2011-2016", "department" : "Math"},
         {"locale":"tr-TR","schoolName":"Ataşehir Anadolu Lisesi","time":"2011-2016", "department" : "Matematik"},
@@ -17,52 +26,86 @@
     ],
     "Skills":[
         {"skillName":"React.js","skillLevel":[
-            {"id":"1", "description":"How react and components works."},
-            {"id":"2", "description":"Passing data with props"},
-            {"id":"3", "description":"Building a navigation"},
-            {"id":"4", "description":"useEffect,useState hooks usage"},
-            {"id":"5", "description":"Fetching data"}
+            {"locale":"en-US","id":"1", "description":"How react and components works."},
+            {"locale":"en-US","id":"2", "description":"Passing data with props"},
+            {"locale":"en-US","id":"3", "description":"Building a navigation"},
+            {"locale":"en-US","id":"4", "description":"useEffect,useState hooks usage"},
+            {"locale":"en-US","id":"5", "description":"Fetching data"},
+            {"locale":"tr-TR","id":"6", "description":"React nedir ve 'component' sistemi nasıl çalışır"},
+            {"locale":"tr-TR","id":"7", "description":"Verileri 'props' kullanarak aktarmak"},
+            {"locale":"tr-TR","id":"8", "description":"Navigasyon tasarımı"},
+            {"locale":"tr-TR","id":"9", "description":"'useEffect', 'useState' kullanımı"},
+            {"locale":"tr-TR","id":"10","description":"Veri çekmek ve ön yüzde kullanmak"}
         ]},
         {"skillName":"Next.js","skillLevel":[
-            {"id":"1", "description":"How Next.js and its features work."},
-            {"id":"2", "description":"File based routing"},
-            {"id":"3", "description":"Server Side / Client Side / Static Rendering"},
-            {"id":"4", "description":"useSWR hook knowledge"},
-            {"id":"5", "description":"Fetching data"}
+            {"locale":"en-US","id":"1", "description":"How Next.js and its features work."},
+            {"locale":"en-US","id":"2", "description":"File based routing"},
+            {"locale":"en-US","id":"3", "description":"Server Side / Client Side / Static Rendering"},
+            {"locale":"en-US","id":"4", "description":"useSWR hook knowledge"},
+            {"locale":"en-US","id":"5", "description":"Fetching data"},
+            {"locale":"tr-TR","id":"6", "description":"Next.js ve özellikleri nelerdir"},
+            {"locale":"tr-TR","id":"7", "description":"Dosya bazlı navigasyon"},
+            {"locale":"tr-TR","id":"8", "description":"Server Side / Client Side / Static Rendering"},
+            {"locale":"tr-TR","id":"9", "description":"useSWR kullanımı ve işlevi"},
+            {"locale":"tr-TR","id":"10", "description":"Next.js özelliklerini kullanarak veri çekmek ve ön yüzde kullanmak"}
         ]},
         {"skillName":"React-Native","skillLevel":[
-            {"id":"1", "description":"How React Native and components works."},
-            {"id":"2", "description":"Passing data with props"},
-            {"id":"3", "description":"Building a navigation"},
-            {"id":"4", "description":"useEffect,useState hooks usage"},
-            {"id":"5", "description":"Fetching data"}
+            {"locale":"en-US","id":"1", "description":"How React Native and components works."},
+            {"locale":"en-US","id":"2", "description":"Verileri 'props' kullanarak aktarmak"},
+            {"locale":"en-US","id":"3", "description":"Building a navigation"},
+            {"locale":"en-US","id":"4", "description":"useEffect,useState hooks usage"},
+            {"locale":"en-US","id":"5", "description":"Fetching data"},
+            {"locale":"tr-TR","id":"6", "description":"React-Native nedir ve 'component' sistemi nasıl çalışır"},
+            {"locale":"tr-TR","id":"7", "description":"Passing data with props"},
+            {"locale":"tr-TR","id":"8", "description":"Navigasyon tasarımı"},
+            {"locale":"tr-TR","id":"9", "description":"'useEffect', 'useState' kullanımı"},
+            {"locale":"tr-TR","id":"10", "description":"Veri çekmek ve ön yüzde kullanmak"}
         ]},
         {"skillName":"Python","skillLevel":[
-            {"id":"1", "description":"What is Python and what can it be used for"},
-            {"id":"2", "description":"Understanding variables and operations"},
-            {"id":"3", "description":"Object Orianted Programming with Python"},
-            {"id":"4", "description":"Fetching Data from API and using It"},
-            {"id":"5", "description":"Basic data analayze and visualization functions."},
-            {"id":"6", "description":"Basic digital image proccessing functions."}
+            {"locale":"en-US","id":"1", "description":"What is Python and what can it be used for"},
+            {"locale":"en-US","id":"2", "description":"Understanding variables and operations"},
+            {"locale":"en-US","id":"3", "description":"Object Orianted Programming with Python"},
+            {"locale":"en-US","id":"4", "description":"Fetching Data from API and using It"},
+            {"locale":"en-US","id":"5", "description":"Basic data analayze and visualization functions."},
+            {"locale":"en-US","id":"6", "description":"Basic digital image proccessing functions."},
+            {"locale":"tr-TR","id":"7", "description":"Python nedir ve neler için kullanılabilir"},
+            {"locale":"tr-TR","id":"8", "description":"Değişkenler ve operasyonlar"},
+            {"locale":"tr-TR","id":"9", "description":"Nesne tabanlı programlama temelleri"},
+            {"locale":"tr-TR","id":"10", "description":"API üzerinden veri çekimi ve kullanımı"},
+            {"locale":"tr-TR","id":"11", "description":"Basit veri analizi fonksiyonları"},
+            {"locale":"tr-TR","id":"12", "description":"Basit dijital fotoğraf işleme fonksiyonları"}
         ]},
         {"skillName":"CSS","skillLevel":[
-            {"id":"1", "description":"What is CSS and what can it be used for"},
-            {"id":"2", "description":"Mobile First Developing Method"},
-            {"id":"3", "description":"Border-Box"},
-            {"id":"4", "description":"Positioning and Understanding 'Flex'"},
-            {"id":"5", "description":"Using custom fonts via API"}
+            {"locale":"en-US","id":"1", "description":"What is CSS and what can it be used for"},
+            {"locale":"en-US","id":"2", "description":"Mobile First Developing Method"},
+            {"locale":"en-US","id":"3", "description":"Border-Box"},
+            {"locale":"en-US","id":"4", "description":"Positioning and Understanding 'Flex'"},
+            {"locale":"en-US","id":"5", "description":"Using custom fonts via API"},
+            {"locale":"tr-TR","id":"6", "description":"CSS nedir ve ne için kullanılır"},
+            {"locale":"tr-TR","id":"7", "description":"'Önce Mobil' methodu nedir"},
+            {"locale":"tr-TR","id":"8", "description":"Border-Box nedir ve nasıl çalışır"},
+            {"locale":"tr-TR","id":"9", "description":"Flex sistemi nedir ve nasıl çalışır"},
+            {"locale":"tr-TR","id":"10","description":"API kullanarak özel fontları kullanmak"}
         ]},
         {"skillName":"Figma","skillLevel":[
-            {"id":"1", "description":"What is Figma and how to use it"},
-            {"id":"2", "description":"Understanding the design for development"},
-            {"id":"3", "description":"Coding the design"}
+            {"locale":"en-US","id":"1", "description":"What is Figma and how to use it"},
+            {"locale":"en-US","id":"2", "description":"Understanding the design for development"},
+            {"locale":"en-US","id":"3", "description":"Coding the design"},
+            {"locale":"tr-TR","id":"4", "description":"Figma nedir ve ne için kullanılır"},
+            {"locale":"tr-TR","id":"5", "description":"Neden Figma'ya ihtiyacımız var ve dizayn nasıl analizlenir"},
+            {"locale":"tr-TR","id":"6", "description":"Figma'dan görülen bir dizayn koda nasıl dökülür"}
         ]},
         {"skillName":"Communication","skillLevel":[
-            {"id":"1", "description":"Understanding of how important teamwork is and why communication is the key"},
-            {"id":"2", "description":"Former Head of Music Club of Dogus University for 2 years (was in management board for 5 years)"},
-            {"id":"3", "description":"How to approach your teammates or head"},
-            {"id":"4", "description":"How to communicate efficiently"},
-            {"id":"5", "description":"How to prevent miscommunications"}
+            {"locale":"en-US","id":"1", "description":"Understanding of how important teamwork is and why communication is the key"},
+            {"locale":"en-US","id":"2", "description":"Former Head of Music Club of Dogus University for 2 years (was in management board for 5 years)"},
+            {"locale":"en-US","id":"3", "description":"How to approach your teammates or head"},
+            {"locale":"en-US","id":"4", "description":"How to communicate efficiently"},
+            {"locale":"en-US","id":"5", "description":"How to prevent miscommunications"},
+            {"locale":"tr-TR","id":"6", "description":"Takım çalışması ve iletişimin öneminin farkında olmak"},
+            {"locale":"tr-TR","id":"7", "description":"Doğuş Üniversitesi Müzik Kulübü'nün yönetim kurulunda 5 sene bulundum. Son 2 senesinde başkandım."},
+            {"locale":"tr-TR","id":"8", "description":"Takım arkadaşıyla veya bir üst rütbeyle nasıl iletişime geçilir"},
+            {"locale":"tr-TR","id":"9", "description":"Nasıl etkili iletişim kurulur"},
+            {"locale":"tr-TR","id":"10", "description":"Yanlış anlaşılmaların önüne nasıl geçilir"}
         ]}
     
     ],
@@ -78,7 +121,12 @@
         {"locale":"en-US","id":"Resume","resumeTitle":"My Resume"},
         {"locale":"tr-TR","id":"ResumeTR","resumeTitle":"Güncel CV'im"},
         {"locale":"en-US","id":"Contact","contactMeTitle":"If you think that..."},
-        {"locale":"tr-TR","id":"ContactTR","contactMeTitle":"Eğer..."}
+        {"locale":"tr-TR","id":"ContactTR","contactMeTitle":"Eğer..."},
+        {"locale":"en-US","id":"resSum","Summary":"Summary: "},
+        {"locale":"tr-TR","id":"resSumTR","Summary":"Özet: "},
+        {"locale":"en-US","id":"resumeSummary","resumeSummary":"24 years old. Living in Turkey. Frontend, UI/UX developer. I prefer Next.js, React.js, MongoDB and Vercel to build websites."},
+        {"locale":"tr-TR","id":"resumeSummaryTR","resumeSummary":"24 yaşında, İstanbul'da yaşıyor. Ön uç - UI/UX geliştiricisi. Tercih ettiği teknolojiler : Next.js, React.js, MongoDB ve Vercel"}
+        
     ],
     "contact":[
         {"locale":"en-US","id":"1","description":"We can work together"},

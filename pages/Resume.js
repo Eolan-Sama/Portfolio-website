@@ -3,7 +3,7 @@ import fs from 'fs/promises'
 import path from 'path'
 import Head from "next/head"
 
-function Resume({Education,Skills,locale}) {
+function Resume({Education,Skills,locale,Titles}) {
   
   return (
     
@@ -14,18 +14,21 @@ function Resume({Education,Skills,locale}) {
         <link rel="icon" href="/logo.svg" />
       </Head>
       
-      <h1 className="title">My Resume</h1>
+      {Titles.filter(p=>p.locale === locale).map((title,i)=>(
+          <h1 key={i} className="title">{title.resumeTitle}</h1>
+        ))}
       <button disabled className="downloadButton">Download My Resume</button>
       <div className="summary">
-        <p><b>Summary:</b> 24 years old. Living in Turkey. Frontend, UI/UX developer. I prefer Next.js, React.js, MongoDB and Vercel to build websites.</p>
-
+      {Titles.filter(p=>p.locale === locale).map((title,i)=>(
+          <p key={i}><b>{title.Summary}</b>&nbsp;{title.resumeSummary}</p>
+        ))}
       </div>
       <h2>Skills</h2>
       <div className="skillList">
-        {Skills.map((skill)=>(
+        {Skills.map((skill,i)=>(
           <div className="skills" >
-          <li className="liTitle" key={skill.skillName}><h4>{skill.skillName}</h4> </li>
-          {skill.skillLevel.map((level)=>(<li className="liLevel" key={level.id}>{level.description}</li>))}
+          <li className="liTitle" key={skill.id}><h4>{skill.skillName}</h4> </li>
+          {skill.skillLevel.filter(p=>p.locale === locale).map((level,i)=>(<li className="liLevel" key={i}>{level.description}</li>))}
           </div>
         ))}
       </div>
@@ -51,7 +54,7 @@ export async function getStaticProps({locale}){
   const data = JSON.parse(jsonData)
   return {
           props:
-      {Education: data.Education, Skills: data.Skills,locale } 
+      {Education: data.Education, Skills: data.Skills,locale, Titles:data.titles } 
           
           
         }

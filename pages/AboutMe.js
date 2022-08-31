@@ -19,29 +19,29 @@ function AboutMe({aboutMe,locale,Titles}) {
       <Image src={profilePic} alt='Picture of Ahmet'/>
       
         <div className="aboutMe">
-        {aboutMe.map((Aboutme)=>(
-          <p className="textTopic"><i>{Aboutme.title1}</i></p>
+        {aboutMe.filter(p=>p.locale === locale).map((Aboutme,i)=>(
+          <p className="textTopic" key={i}><i>{Aboutme.title1}</i></p>
         ))}
-        {aboutMe.map((Aboutme)=>(
-          <p className="aboutMeText">{Aboutme.text1}</p>
+        {aboutMe.filter(p=>p.locale === locale).map((Aboutme,i)=>(
+          <p className="aboutMeText"key={i}>{Aboutme.text1}</p>
         ))}
-        {aboutMe.map((Aboutme)=>(
-          <p className="aboutMeText">{Aboutme.text2}</p>
+        {aboutMe.filter(p=>p.locale === locale).map((Aboutme,i)=>(
+          <p className="aboutMeText"key={i}>{Aboutme.text2}</p>
         ))}
-        {aboutMe.map((Aboutme)=>(
-          <p className="aboutMeText">{Aboutme.text3}</p>
+        {aboutMe.filter(p=>p.locale === locale).map((Aboutme,i)=>(
+          <p className="aboutMeText"key={i}>{Aboutme.text3}</p>
         ))}
-         {aboutMe.map((Aboutme)=>(
-          <p className="textTopic"><i>{Aboutme.title2}</i></p>
+         {aboutMe.filter(p=>p.locale === locale).map((Aboutme,i)=>(
+          <p className="textTopic"key={i}><i>{Aboutme.title2}</i></p>
         ))}
-        {aboutMe.map((Aboutme)=>(
-          <p className="aboutMeText">{Aboutme.text4}</p>
+        {aboutMe.filter(p=>p.locale === locale).map((Aboutme,i)=>(
+          <p className="aboutMeText"key={i}>{Aboutme.text4}</p>
         ))}
-        {aboutMe.map((Aboutme)=>(
-          <p className="textTopic"><i>{Aboutme.title3}</i></p>
+        {aboutMe.filter(p=>p.locale === locale).map((Aboutme,i)=>(
+          <p className="textTopic"key={i}><i>{Aboutme.title3}</i></p>
         ))}
-        {aboutMe.map((Aboutme)=>(
-          <p className="aboutMeText">{Aboutme.text5}</p>
+        {aboutMe.filter(p=>p.locale === locale).map((Aboutme,i)=>(
+          <p className="aboutMeText"key={i}>{Aboutme.text5}</p>
         ))}
         </div>
       

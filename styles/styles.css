@@ -194,8 +194,13 @@ h2{
   
 }
 .summary{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
   max-width:50vw;
 }
+
+
 .liTitle{
   margin:0;
   padding:0;
@@ -212,14 +217,14 @@ h2{
   flex-wrap:wrap;
   flex-direction: row;
   width:80vw;
-  justify-content: center;
   margin:2rem 0 2rem 0;
 }
 .skills{
   display: flex;
   flex-direction: column;
-  text-align: left;
   width: 25vw;
+  margin:1rem;
+  text-align: left;
   
 }
 .education{
@@ -264,8 +269,8 @@ h2{
   .card{
     display:flex;
     flex-direction:row;
-    min-width: 128px;
-    max-width: fit-content;
+    width:45vw;
+    
     margin: 0.5rem;
   }
   .projectList{
@@ -282,6 +287,11 @@ h2{
   }
   .summary{
     max-width:80vw;
+  }
+  .skillList{
+    max-width: max-content;
+    height: fit-content;
+    
   }
   
  
@@ -303,6 +313,11 @@ h2{
     max-width:80vw;
   }
   
+  .skills{
+    max-width:80vw;
+  
+  }
+  
 }
 @media (max-width: 780px) {
   .projectList{
@@ -315,14 +330,15 @@ h2{
 
   }
   .skillList{
-    max-width: fit-content;
+    max-width: max-content;
     height: fit-content;
     
   }
   .skills{
-    width: max-content;
-
+    width: 80vw;
+    
   }
+  
   .aboutMe{
     max-width:80vw;
   }
@@ -334,6 +350,7 @@ h2{
 
 @media (max-width:1400px){
   .skillList{
+    
     justify-content: center;
   }
   .aboutMe{
@@ -341,6 +358,11 @@ h2{
   }
   .summary{
     max-width:80vw;
+  }
+  .skills{
+    width: 80vw;
+   
+    
   }
   
 }
